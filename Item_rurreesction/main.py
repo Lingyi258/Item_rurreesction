@@ -48,7 +48,7 @@ class ItemManager(QWidget):
         layout.addWidget(self.description_input)
         layout.addWidget(self.contact_input)
 
-        # 按钮
+        # 按钮初始化
         button_layout = QHBoxLayout()
         self.add_button = QPushButton("添加物品", self)
         self.add_button.clicked.connect(self.add_item)
@@ -102,9 +102,9 @@ class ItemManager(QWidget):
             with open('items.json', 'r', encoding='utf-8') as f:
                 self.items = json.load(f)
                 self.update_item_table()
+        # 若目录下无JSON文件，则创建一个新的空 JSON 文件
         except FileNotFoundError:
             self.items = []
-            # 创建一个新的空 JSON 文件
             with open('items.json', 'w', encoding='utf-8') as f:
                 json.dump(self.items, f, ensure_ascii=False, indent=4)
 
