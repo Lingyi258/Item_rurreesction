@@ -1,0 +1,16 @@
+[
+    {
+        "username": "user1",
+        "password": "123456",
+        "address": "D26",
+        "contact_info": "18266942616",
+        "is_approved": true
+    },
+    {
+        "username": "user2",
+        "password": "123456",
+        "address": "D30",
+        "contact_info": "18554892456",
+        "is_approved": true
+    }
+]

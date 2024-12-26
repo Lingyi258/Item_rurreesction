@@ -1,0 +1,40 @@
+[
+    {
+        "name": "大地巡旅",
+        "description": "明日方舟官方世界观设定集",
+        "address": "X29",
+        "contact_phone": "18264649464",
+        "contact_email": "BHB@sjtu.edu.cn",
+        "category": "书籍",
+        "additional_attributes": {
+            "序列号": "958485",
+            "作者": "埃里克森",
+            "出版社": "浙江摄影出版社"
+        }
+    },
+    {
+        "name": "大学物理教程",
+        "description": "知识的重量",
+        "address": "X29",
+        "contact_phone": "18264649464",
+        "contact_email": "BHB@sjtu.edu.cn",
+        "category": "书籍",
+        "additional_attributes": {
+            "序列号": "456456",
+            "作者": "吴锡珑",
+            "出版社": "高等教育出版社"
+        }
+    },
+    {
+        "name": "可口可乐",
+        "description": "快乐水",
+        "address": "X29",
+        "contact_phone": "18264649464",
+        "contact_email": "BHB@sjtu.edu.cn",
+        "category": "食品",
+        "additional_attributes": {
+            "保质期": "2025-6-30",
+            "数量": "30"
+        }
+    }
+]
