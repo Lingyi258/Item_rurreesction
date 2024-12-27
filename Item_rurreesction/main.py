@@ -1,12 +1,5 @@
 import sys
-import json
-from PyQt5.QtWidgets import (
-    QApplication, QWidget, QVBoxLayout, QHBoxLayout,
-    QLineEdit, QPushButton, QTableWidget,
-    QTableWidgetItem, QMessageBox, QLabel
-)
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QFont
+from PyQt5.QtWidgets import QApplication
 from user import UserManagement
 
 if __name__ == "__main__":

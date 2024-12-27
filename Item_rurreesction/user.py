@@ -1,4 +1,3 @@
-import sys
 import json
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout,
@@ -7,9 +6,8 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFont
-from category import CategoryManagement
 from admin_operation import AdminOperation
-from NormalUser_operation import NormalUserOperation
+from NormalUser_operation import ItemManagement
 
 class User:
     def __init__(self, username, password, address, contact_info):
@@ -34,7 +32,6 @@ class UserManagement(QWidget):
         self.admins = {}
         self.user_filename = user_filename
         self.admin_filename = admin_filename
-        self.category_management = CategoryManagement()
         self.initUI()
         self.load_data()
 
@@ -229,7 +226,7 @@ class UserManagement(QWidget):
                 QMessageBox.warning(self, "登录失败", "您的账户尚未通过审核！")
             else:
                 QMessageBox.information(self, "登录成功", "普通用户登录成功！")
-                self.normal_user_operation = NormalUserOperation()
+                self.normal_user_operation = ItemManagement()
                 self.normal_user_operation.show()              
         else:
             QMessageBox.warning(self, "登录失败", "用户名或密码错误！")

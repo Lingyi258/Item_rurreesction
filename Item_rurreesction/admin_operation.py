@@ -1,11 +1,8 @@
-import sys
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLineEdit, QPushButton,
     QTableWidget, QTableWidgetItem, QMessageBox, QLabel, QRadioButton, QButtonGroup,
     QTabWidget, QFormLayout
 )
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QFont
 from category import CategoryManagement
 
 class AdminOperation(QWidget):

@@ -1,19 +1,16 @@
-import sys
 import json
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLineEdit, QPushButton,
     QTableWidget, QTableWidgetItem, QMessageBox, QLabel, QComboBox, QFormLayout
 )
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QFont
 from item import Item
 from category import CategoryManagement
 
-class NormalUserOperation(QWidget):
+class ItemManagement(QWidget):
     def __init__(self):
         super().__init__()
         self.items = []
-        self.category_management = CategoryManagement()
+        self.category_management = category_management()
         self.initUI()
         self.load_items()
 
