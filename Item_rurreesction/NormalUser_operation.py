@@ -10,7 +10,7 @@ class ItemManagement(QWidget):
     def __init__(self):
         super().__init__()
         self.items = []
-        self.category_management = category_management()
+        self.category_management = CategoryManagement()
         self.initUI()
         self.load_items()
 
